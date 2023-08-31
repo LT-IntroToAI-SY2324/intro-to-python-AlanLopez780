@@ -1,5 +1,5 @@
 # How to start coding with chatGPT
-
+Alan Lopez
 ## Description
 There is a lot of value in using chatGPT (or other generative AI) outside of just asking for answers.  I believe that if you effectively learn how to program, you'll find AI as a tool that helps you speed up daily tasks instead of a tool that will replace you.  In order to do this we need to know how to ask it the correct questions and use it as a great resource.
 
