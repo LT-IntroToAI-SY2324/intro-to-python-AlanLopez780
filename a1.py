@@ -65,8 +65,12 @@ def every_other(lst: List[T]) -> List[T]:
     Returns:
         a list of every of other item in the original list starting with the first
     """
+
+    List[T] = lst
     for el in lst:
-        
+        if lst.index(el) / 2 == 0
+            lst.remove(el)
+    
 
 
 
