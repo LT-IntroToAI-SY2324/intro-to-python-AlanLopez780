@@ -1,15 +1,16 @@
 # We will write a rock paper scissors game in class - Complete it in this file
 import random
 
-player_choice = input("Choose rock, paper, or scissors: ")
-computer_choice = random.choice(options)
+options = ["rock", "paper", "scissors"]
+player_choice = "rock"
+computer_choice = "paper"
 
 def get_choice():
-    options = ["rock", "paper", "scissors"]
     player_choice = input("Choose rock, paper, or scissors: ")
     computer_choice = random.choice(options)
     choices = {"player": player_choice, "computer": computer_choice}
-    return choices
+    result = (f"You chose: {player_choice}, Computer chose: {computer_choice}")
+    return result
 
 choices = get_choice()
 print(choices)
