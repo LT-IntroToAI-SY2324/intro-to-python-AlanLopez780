@@ -66,10 +66,10 @@ def every_other(lst: List[T]) -> List[T]:
         a list of every of other item in the original list starting with the first
     """
     
-    for el in List[T]:
-        if lst.index(el) % 2 == 0:
+    for el in lst:
+        if el % 2 == 0:
             lst.remove(el)
-    return T
+    return lst
 
 
 
@@ -83,8 +83,12 @@ def sum_list(lst: List[int]) -> int:
     Returns:
         the sum of the passed in list
     """
-    raise NotImplementedError("sum_list")
-
+    i = 0
+    for el in lst:
+        j = el
+        i += j
+        sum = i
+    return sum
 
 def mean(lst: List[int]) -> float:
     """Takes a list of numbers, and returns the mean of the numbers.
@@ -95,8 +99,13 @@ def mean(lst: List[int]) -> float:
     Returns:
         the mean of the passed in list
     """
-    raise NotImplementedError("mean")
-
+    i = 0
+    for el in lst:
+        j = el
+        i += j
+        sum = i
+    mean = sum / len(lst)
+    return mean
 
 def median(lst: List[int]) -> float:
     """Takes an ordered list of numbers, and returns the median of the numbers.
@@ -110,7 +119,13 @@ def median(lst: List[int]) -> float:
     Returns:
         the median of the passed in list
     """
-    raise NotImplementedError("median")
+    lst.sort(reverse=False)
+    if len(lst) % 2 == 1:
+        median = lst.pop(round(len(lst) / 2))
+    else:
+        median = (((lst[(len(lst) / 2) - 1])) + (lst[len(lst) / 2])) / 2
+    return median
+
 
 
 def duck_duck_goose(lst: List[str]) -> List[str]:
@@ -132,7 +147,9 @@ def duck_duck_goose(lst: List[str]) -> List[str]:
     Returns:
         the resulting list after playing duck duck goose
     """
-    raise NotImplementedError("duck_duck_goose")
+    for el in lst:
+        while len(lst) > 2:
+            names_left = lst[::3]
 
 
 # this line causes the nested code to be skipped if the file is imported instead of run

@@ -2,12 +2,10 @@
 import random
 
 options = ["rock", "paper", "scissors"]
-player_choice = "rock"
-computer_choice = "paper"
+player_choice = input("Choose rock, paper, or scissors: ")
+computer_choice = random.choice(options)
 
 def get_choice():
-    player_choice = input("Choose rock, paper, or scissors: ")
-    computer_choice = random.choice(options)
     choices = {"player": player_choice, "computer": computer_choice}
     result = (f"You chose: {player_choice}, Computer chose: {computer_choice}")
     return result
