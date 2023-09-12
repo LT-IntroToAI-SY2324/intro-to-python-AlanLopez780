@@ -14,10 +14,12 @@ Mr. Berg will look at all your files to determine what you have completed.  If t
 
 1. What is your initial thoughts about the python programming language?
 
-
+I think it's ok and honestly better than the other programming languages I used. I learned what Python has that other programming languages don't have.
 
 2. Describe some similarities and differences that you found between python and other programming languages you have used in the past?
 
-
+Python is a stricter programming language than other languages such as JavaScript and HTML, where some stuff is not allowed such as switching variable types. However, the basics of the language is still easier whereas you don't have to put anything before a variable name when you are defining a variable, and the language automatically interprets what type of variable you want to define.
 
 3. What are some things that you learned through this assignment?
+
+I learned how to make functions and I also learned to go over my program to see what went wrong.
