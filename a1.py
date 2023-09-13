@@ -105,7 +105,10 @@ def mean(lst: List[int]) -> float:
         i += j
         sum = i
     mean = sum / len(lst)
-    return mean
+    if not lst:
+        return 0
+    else:
+        return mean
 
 def median(lst: List[int]) -> float:
     """Takes an ordered list of numbers, and returns the median of the numbers.
@@ -121,7 +124,7 @@ def median(lst: List[int]) -> float:
     """
     lst.sort(reverse=False)
     if len(lst) % 2 == 1:
-        median = lst.pop(round(len(lst) / 2))
+        median = lst.pop((len(lst) // 2))
     else:
         median = (((lst[(len(lst) / 2) - 1])) + (lst[len(lst) / 2])) / 2
     return median
@@ -160,8 +163,9 @@ if __name__ == "__main__":
     assert every_other([1, 2, 3, 4, 5]) == [1, 3, 5], "every_other of [1,2,3,4,5] failed"
     assert sum_list([1, 2, 3]) == 6, "sum_list of [1,2,3] failed"
     assert mean([1, 2, 3, 4, 5]) == 3, "mean of [1,2,3,4,5] failed"
+    assert mean([]) == 0, "mean of [] failed"
     assert median([1, 2, 3, 4, 5]) == 3, "median of [1,2,3,4,5] failed"
-
+    assert median([1, 2, 3, 4, 5, 6]) == 3.5, "median of [1,2,3,4,5,6] failed"
     names = ["roscoe", "kim", "woz", "solin", "law", "remess"]
     assert duck_duck_goose(names) == ["roscoe", "law"]
 
